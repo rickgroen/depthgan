@@ -1,0 +1,19 @@
+# Data and model directories
+data/
+!data/.gitkeep
+tmp/
+!tmp/.gitkeep
+output/
+!output/.gitkeep
+saved_models/
+!saved_models/.gitkeep
+
+# The file lists
+utils/filenames/*
+!utils/filenames/eigen_*
+!utils/filenames/kitti_*
+!utils/filenames/cityscapes_*
+
+.idea/
+*/__pycache__/
+__pycache__/
