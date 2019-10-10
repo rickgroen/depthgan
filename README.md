@@ -1,4 +1,4 @@
-# Scene Consistency - Thesis
+# On the Benefit of Adversarial Learning for Monocular Depth Estimation
 This is the repository for our CVIU work 'On the Benefit of Adversarial Learning for Monocular Depth Estimation'.
 Two works have served as baselines for this work:  
 **Unsupervised Monocular Depth Estimation with Left-Right Consistency**  
