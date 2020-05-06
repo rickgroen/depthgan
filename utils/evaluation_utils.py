@@ -61,10 +61,10 @@ def convert_disps_to_depths_kitti(gt_disparities, pred_disparities):
         pred_disp = pred_disparities[i]
         pred_disp = width * cv2.resize(pred_disp, (width, height), interpolation=cv2.INTER_LINEAR)
 
-        pred_disparities_resized.append(pred_disp) 
+        pred_disparities_resized.append(pred_disp)
 
-        gt_disp[gt_disp > 0] = (gt_disp[gt_disp > 0] - 1)
-        gt_depth = (width_to_focal[width] * 0.54) / gt_disp
+        mask = gt_disp > 0
+        gt_depth = width_to_focal[width] * 0.54 / (gt_disp + (1.0 - mask))
         gt_depth[gt_depth == inf] = 0
 
         pred_depth = width_to_focal[width] * 0.54 / pred_disp

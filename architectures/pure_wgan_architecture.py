@@ -108,7 +108,7 @@ class PureWGanArchitecture(BaseArchitecture):
         fake_right_var = torch.autograd.Variable(self.fake_right, requires_grad=True)
         self.loss_G = self.D(fake_right_var)
         self.loss_G = self.loss_G.mean()
-        self.loss_G.backward()
+        self.loss_G.backward(self.mone)
 
         self.losses[self.current_epoch]['train']['G'] += self.loss_G.item()
 

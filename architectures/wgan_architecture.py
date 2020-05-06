@@ -107,7 +107,7 @@ class WGanArchitecture(BaseArchitecture):
         fake_right_var = torch.autograd.Variable(self.fake_right, requires_grad=True)
         self.loss_G_GAN = self.D(fake_right_var)
         self.loss_G_GAN = self.loss_G_GAN.mean() * self.args.discriminator_w
-        self.loss_G_GAN.backward()
+        self.loss_G_GAN.backward(self.mone)
 
         # Reconstruction loss.
         self.loss_G_MonoDepth = self.criterionMonoDepth(self.disps, [self.left, self.right])

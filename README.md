@@ -1,5 +1,8 @@
 # On the Benefit of Adversarial Learning for Monocular Depth Estimation
-This is the repository for our CVIU work 'On the Benefit of Adversarial Learning for Monocular Depth Estimation'.
+This is the repository for our CVIU work **On the Benefit of Adversarial Learning for Monocular Depth Estimation**. \
+[arXiv](https://arxiv.org/pdf/1910.13340.pdf) \
+[CVIU](https://doi.org/10.1016/j.cviu.2019.102848)
+
 Two works have served as baselines for this work:  
 **Unsupervised Monocular Depth Estimation with Left-Right Consistency**  
 [arXiv](https://arxiv.org/abs/1609.03677)
@@ -66,3 +69,18 @@ A few repositories were the inspiration for this work. These are:
 [Unsupervised Adversarial Depth Estimation using Cycled Generative Networks](https://github.com/andrea-pilzer/unsup-stereo-depthGAN/blob/master/README.md)  
 [Club AI's Pytorch Implementation of MonoDepth](https://github.com/ClubAI/MonoDepth-PyTorch)  
 [Cycle GAN and Pix2Pix in Pytorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+
+## Citation
+If this work was useful for your research, please consider citing:
+```
+@article{groenendijk2020benefit,
+  title={On the benefit of adversarial training for monocular depth estimation},
+  author={Groenendijk, Rick and Karaoglu, Sezer and Gevers, Theo and Mensink, Thomas},
+  journal={Computer Vision and Image Understanding},
+  volume={190},
+  pages={102848},
+  year={2020},
+  publisher={Elsevier}
+}
+```
+
