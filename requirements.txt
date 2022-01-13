@@ -1,6 +1,6 @@
 scipy==1.1.0
 torchvision==0.2.1
-numpy==1.15.2
+numpy==1.21.0
 opencv_python==4.2.0.32
 torch==0.4.1
 Pillow==9.0.0
